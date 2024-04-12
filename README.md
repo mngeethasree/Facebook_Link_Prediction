@@ -28,3 +28,7 @@ Since our data is confined to only existing connections, model can only use thes
 
 ## Feature Engineering:
 For each pair of users, create additional features representing characteristics of both users.
+
+
+## Performance metric to validate the model:
+It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model
