@@ -6,7 +6,8 @@ Given a new user pair (Um, Un), model should be able to predict what is the prob
 
 
 ## Structure of Data:
-In the dataset, each record consists of a pair of users who are currently connected to each other
+In the dataset, each record consists of a pair of users who are currently connected to each other <br>
+
 For example, <br>
 A, B  -  indicates that A follows B (A -> Source node, B-> Destination node) <br>
 B, A  -  indicates that B follows A (B -> Source node, A-> Destination node) <br>
@@ -20,15 +21,44 @@ Hence this data can be represented as directed graph.
 2. Distribution of number of followees for each user - 99.9% of the users follow less than 123 other users.
 3. Distribution of sum of number of followers and number of followees - represents the degree of connection of one user with others in the network.
 
-## Formulating as supervised classification problem:
+## Data Preparation:
+
+### Formulating as supervised classification problem - Creating missing links:
 In order to translate to a classification problem we need a good set of positive and negative class points for the model to train on. 
-Since our data is confined to only existing connections, model can only use these as positive class data points. 
+Since our data is confined to only existing connections, model can only use these as positive class data points. Inorder to generate extra negative class points, we can randonmly sample any two users who are not currently connected in the network such that the shortest path between two users is greater than two (missing links) . Inorder to have a balanced data set with good distribution of positive and negative data points, we can generate as many missing links as there are existing links.
 
-
+### Train Test Split for Model Validation:
+Append the missing links with actual links in the network with appropriate target labels. Create an 80-20 split for train and test datasets.
 
 ## Feature Engineering:
-For each pair of users, create additional features representing characteristics of both users.
-
+For each pair of users representing each record, create additional features representing similarity between users followers and followees. Following are certain features:
+(i) Jaccard Index for Followers: Jaccard index measures the degree of similarity between two sets. Mathematically, it is intersection over union between two sets. Using this feature, we can measure the degree of overlap between followers of both the users. <br>
+(ii) Jaccard Distance for Followees: Similar to followers, we can create Jaccard distance for followees <br>
+(iii) Cosine Distance for Followers <br>
+(iv) Cosine Distance for Followees <br>
+(v) Page Rank <br>
+(vi) Shortest path between nodes in the graph <br>
+(vii) Check if users belong to same weekly connected component <br>
+(viii) Adamic/Adar Index <br>
+(ix) Is user following back <br>
+(x) Katz centrality <br>
+(xi) Hits Score <br>
+(xii) SVD features from Adjacency matrix  <br>
+(xiii) preferential attachment <br>
 
 ## Performance metric to validate the model:
 It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model
+
+## Modeling
+Once features are setup, train a Random Forest Classifer and observe the performance for different values of n_estimators, depth etc.
+
+## Final Results
+Final Model has an roc_auc of 0.93.
+
+### Interpretation
+1. follows back is the top feature, indicating a user is most likely to follow back any of its followees.
+2. Including preferential attaching as a feature improved model performance and turns up in top 10 features.
+3. svd features do not seem to be helpful in the classification decision
+
+
+
