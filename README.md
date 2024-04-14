@@ -2,7 +2,7 @@
 ## Objective:
 
 To predict the possibility of future link between all the users, given the current state of connections.
-Given a new user pair (Um, Un), model should be able to predict what is the probability that um is most likely to follow un in future.
+Given a new user pair (Um, Un), model should be able to predict what is the probability that Um is most likely to follow Un in future.
 
 
 ## Structure of Data:
