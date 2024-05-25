@@ -91,8 +91,13 @@ PageRank - https://en.wikipedia.org/wiki/PageRank <br>
 For more details on pagerank API from networkx - https://networkx.github.io/documentation/networkx-1.10/reference/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank.html <br>
 
 **(vi) Shortest path between nodes in the graph:** <br>
+Another important feature could be the shortest path distance between nodes in the graph. 
+If the shortest path is smaller, it indicates that the two users are more closely connected compared to users with a larger shortest path distance.
+But if the users are directly connected to each other, then the shortest path distance would be 0. Hence in this case, the edge is removed from the graph and the shortest path is then calculated. <br>
 
-**(vii) Check if users belong to same weekly connected component:** <br>
+**(vii) Check if users belong to same community:** <br>
+
+ weekly connected component
 
 **(viii) Adamic/Adar Index:** <br>
 
