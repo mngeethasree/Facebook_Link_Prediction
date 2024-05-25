@@ -66,6 +66,9 @@ Almost **~7.12%** of the users that fall in the Test set are NOT present in the 
 For each pair of users representing each record, create additional features representing similarity between users followers and followees. Following are certain features that are created for the directed graph data: <br>
 **(i) Jaccard Distance for Followers:** Jaccard index measures the degree of similarity between two sets. Mathematically, it is intersection over union between two sets. Using this feature, we can measure the degree of overlap between followers of both the users. <br>
 $j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$ <br>
+
+<div align="center">$j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$</div> <br>
+
 **(ii) Jaccard Distance for Followees:** Similar to followers, we can create Jaccard distance for followees <br>
 **(iii) Cosine Distance for Followers** <br>
 **(iv) Cosine Distance for Followees** <br>
