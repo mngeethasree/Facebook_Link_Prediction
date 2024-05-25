@@ -96,14 +96,22 @@ If the shortest path is smaller, it indicates that the two users are more closel
 But if the users are directly connected to each other, then the shortest path distance would be 0. Hence in this case, the edge is removed from the graph and the shortest path is then calculated. <br>
 
 **(vii) Flag indicating if users belong to same community:** <br>
-
 Creating a binary indicator that denotes whether two users belong to the same community or group within the network graph. Communities are densely connected subgraphs with sparse connections to other parts of the graph. This feature can be useful for understanding relationships in smaller communities. This binary flag represents if the users belong to same weakly connected component. <br>
 
 **(viii) Adamic/Adar Index:** <br>
-$$A(x, y) = \sum_{u \in N(x) \cap N(y)} \frac{1}{\log(|N(u)|)}$$
+Adamic/Adar measures is defined as inverted sum of degrees of common neighbours for given two vertices/nodes. It is mathematically represented by following formula <br>
+$$A(x, y) = \sum_{u \in N(x) \cap N(y)} \frac{1}{\log(|N(u)|)}$$ <br>
+
 **(ix) Is user following back:** <br>
+Is following back is a binary flag indicating if destination node user follows source node user. This can be very useful feature in predicting whether source node will follow destination node in future.
 
 **(x) Katz centrality:** <br>
+Katz centrality computes the centrality for a node based on the centrality of its neighbors. It is a generalization of the eigenvector centrality.
+The Katz centrality for node i is  give by <br>
+$$x_i = \alpha \sum_j A_{ij} x_j + \beta$$ <br>
+where A is the adjacency matrix of the graph G with eigenvalues <br>
+$$\alpha < \frac{1}{\lambda_{max}}$$ <br>
+
 
 **(xi) Hits Score:** <br>
 
