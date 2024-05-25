@@ -107,9 +107,9 @@ Is following back is a binary flag indicating if destination node user follows s
 
 **(x) Katz centrality:** <br>
 Katz centrality computes the centrality for a node based on the centrality of its neighbors. It is a generalization of the eigenvector centrality.
-The Katz centrality for node i is  give by <br>
+The Katz centrality for node i is  given by <br>
 $$x_i = \alpha \sum_j A_{ij} x_j + \beta$$ <br>
-where A is the adjacency matrix of the graph G with eigenvalues <br>
+where A is the adjacency matrix of the graph G with eigenvalues \lambda. The parameter \beta controls the initial centrality <br> 
 $$\alpha < \frac{1}{\lambda_{max}}$$ <br>
 
 
