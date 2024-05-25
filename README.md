@@ -115,21 +115,37 @@ $$\alpha < \frac{1}{\lambda_{max}}$$ <br>
 Refer to - https://en.wikipedia.org/wiki/Katz_centrality <br>
 https://www.geeksforgeeks.org/katz-centrality-centrality-measure/ <br>
 
-**(xi) Hits Score:** <br>
+**(xi) Hits Score:** (also known as hubs and authorities) <br>
+The HITS algorithm computes two numbers for a node. Authorities estimates the node value based on the incoming links. Hubs estimates the node value based on outgoing links.
+
+https://en.wikipedia.org/wiki/HITS_algorithm
 
 **(xii) SVD features from Adjacency matrix:**  <br>
+The connected graph can be represented as an adjancency matrix and since the graph is directed, the adjacency matrix will not be a symmetric matrix. This Adjancency matrix can be decomposed using Singular value decomposition to generate 6 dimensional latent representations for both source and destination node users.
+Hence a total of 12 features are generated for both source and destination users that can be used in the modeling process.
 
 **(xiii) preferential attachment:** <br>
+A preferential attachment feature is calculated based on predecessors and successors count of source and destination nodes. <br>
 
+## Modeling
+Once features are in place, we train a Random Forest Classifer and evaluate the performance (using F1-score as evaluation metric) for different values of n_estimators, depth etc.
+<img width="278" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/651ebc8c-b9a3-495e-8fbf-11e54bb525fd">
+<img width="274" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/6c69b849-c54a-411f-b769-8ad288afebbd">
+
+Using optimal values of depth and number of estimators, we train a Random Forest Classifier <br> 
 
 ## Performance metric to validate the model:
 It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model
 
-## Modeling
-Once features are setup, train a Random Forest Classifer and observe the performance for different values of n_estimators, depth etc.
+**Confusion Matrix of Train Set**
+ <img width="620" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/01503c28-c134-46d3-af1b-f76d69cc269d"> <br>
+
+**Confusion Matrix of Train Set**
+<img width="625" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/2d0cf8d4-8c69-4e0f-b162-5ca8f4b42458"> <br>
 
 ## Final Results
-Final Model has an roc_auc of 0.93.
+Final Model has an roc_auc of 0.93. <br>
+<img width="277" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/a299b414-e256-4927-9fd5-5ff4b0a2578c"> <br>
 
 ### Interpretation
 1. follows back is the top feature, indicating a user is most likely to follow back any of its followees.
