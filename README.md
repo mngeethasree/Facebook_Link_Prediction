@@ -23,8 +23,7 @@ Hence this data can be represented as directed graph.
 1. Distribution & Density function of number of followers for each user 
 
 <img width="440" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/77c75481-8ef8-4eb7-bca6-34bc1e01c428"> 
-<img width="500" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/5c218db7-c7c2-4de1-b796-d0a0e38ab8d1">
-<br>
+<img width="500" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/5c218db7-c7c2-4de1-b796-d0a0e38ab8d1"> <br>
 
 <img width="178" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/4bce054b-c100-42e4-b70c-7378992cb943">
 
@@ -34,7 +33,8 @@ Hence this data can be represented as directed graph.
 
 2. Distribution of number of followees for each user
 
-<img width="480" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/b20c937e-440c-424b-983d-e907da8bf01f"> <br>
+<img width="480" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/b20c937e-440c-424b-983d-e907da8bf01f"> 
+<img width="508" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/cfab14e4-d4e2-4134-9246-fc8217160dc7"> <br>
 
 <img width="187" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/9db567de-2152-4b4e-b2a6-03ccc5772e58">
 
