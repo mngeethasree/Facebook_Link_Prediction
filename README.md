@@ -112,6 +112,8 @@ $$x_i = \alpha \sum_j A_{ij} x_j + \beta$$ <br>
 where A is the adjacency matrix of the graph G with eigenvalues $\lambda$. The parameter $\beta$ controls the initial centrality and <br> 
 $$\alpha < \frac{1}{\lambda_{max}}$$ <br>
 
+Refer to - https://en.wikipedia.org/wiki/Katz_centrality <br>
+https://www.geeksforgeeks.org/katz-centrality-centrality-measure/ <br>
 
 **(xi) Hits Score:** <br>
 
