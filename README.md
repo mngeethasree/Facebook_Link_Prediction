@@ -20,9 +20,11 @@ Hence this data can be represented as directed graph.
 
 
 ## Exploratory Data Analysis:
-1. Distribution of number of followers for each user 
+1. Distribution & Density function of number of followers for each user 
 
-<img width="440" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/77c75481-8ef8-4eb7-bca6-34bc1e01c428"> <br>
+<img width="440" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/77c75481-8ef8-4eb7-bca6-34bc1e01c428"> 
+<img width="500" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/5c218db7-c7c2-4de1-b796-d0a0e38ab8d1">
+<br>
 
 <img width="178" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/4bce054b-c100-42e4-b70c-7378992cb943">
 
