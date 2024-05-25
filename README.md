@@ -63,20 +63,21 @@ Append the missing links with actual links in the network with appropriate targe
 Almost **~7.12%** of the users that fall in the Test set are NOT present in the Training data. Hence the model will have never seen these users during the training process.
 
 ## Feature Engineering:
-For each pair of users representing each record, create additional features representing similarity between users followers and followees. Following are certain features:
-(i) Jaccard Index for Followers: Jaccard index measures the degree of similarity between two sets. Mathematically, it is intersection over union between two sets. Using this feature, we can measure the degree of overlap between followers of both the users. <br>
-(ii) Jaccard Distance for Followees: Similar to followers, we can create Jaccard distance for followees <br>
-(iii) Cosine Distance for Followers <br>
-(iv) Cosine Distance for Followees <br>
-(v) Page Rank <br>
-(vi) Shortest path between nodes in the graph <br>
-(vii) Check if users belong to same weekly connected component <br>
-(viii) Adamic/Adar Index <br>
-(ix) Is user following back <br>
-(x) Katz centrality <br>
-(xi) Hits Score <br>
-(xii) SVD features from Adjacency matrix  <br>
-(xiii) preferential attachment <br>
+For each pair of users representing each record, create additional features representing similarity between users followers and followees. Following are certain features that are created for the directed graph data: <br>
+**(i) Jaccard Distance for Followers:** Jaccard index measures the degree of similarity between two sets. Mathematically, it is intersection over union between two sets. Using this feature, we can measure the degree of overlap between followers of both the users. <br>
+$j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$ <br>
+**(ii) Jaccard Distance for Followees:** Similar to followers, we can create Jaccard distance for followees <br>
+**(iii) Cosine Distance for Followers** <br>
+**(iv) Cosine Distance for Followees** <br>
+**(v) Page Rank** <br>
+**(vi) Shortest path between nodes in the graph** <br>
+**(vii) Check if users belong to same weekly connected component** <br>
+**(viii) Adamic/Adar Index** <br>
+**(ix) Is user following back** <br>
+**(x) Katz centrality** <br>
+**(xi) Hits Score** <br>
+**(xii) SVD features from Adjacency matrix**  <br>
+**(xiii) preferential attachment** <br>
 
 ## Performance metric to validate the model:
 It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model
