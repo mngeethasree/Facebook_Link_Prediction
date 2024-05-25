@@ -134,7 +134,7 @@ Once features are in place, we train a Random Forest Classifer and evaluate the 
 
 Using optimal values of depth and number of estimators, we train a Random Forest Classifier to obtain the final model. <br> 
 
-## Performance metric to validate the model:
+#### Performance metric to validate the model:
 It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model.  <br>
 
 **Confusion Matrix of Train Set** <br>
