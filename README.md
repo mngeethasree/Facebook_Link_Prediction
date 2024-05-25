@@ -20,7 +20,7 @@ Hence this data can be represented as directed graph.
 
 
 ## Exploratory Data Analysis:
-1. Distribution & Density function of number of followers for each user 
+**1. Distribution & Density function of number of followers for each user**
 
 <img width="440" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/77c75481-8ef8-4eb7-bca6-34bc1e01c428"> 
 <img width="500" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/5c218db7-c7c2-4de1-b796-d0a0e38ab8d1"> <br>
@@ -31,7 +31,7 @@ Hence this data can be represented as directed graph.
 99% of the users have 40 or less followers. In other words, only 1% of users have follower count higher than 40.
 
 
-2. Distribution of number of followees for each user
+**2. Distribution of number of followees for each user**
 
 <img width="480" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/b20c937e-440c-424b-983d-e907da8bf01f"> 
 <img width="508" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/cfab14e4-d4e2-4134-9246-fc8217160dc7"> <br>
@@ -41,7 +41,13 @@ Hence this data can be represented as directed graph.
 
 99.9% of the users follow less than 123 other users.
 
-3. Distribution of sum of number of followers and number of followees - represents the degree of connection of one user with others in the network.
+**3. Distribution of sum of number of followers and number of followees**
+
+<img width="425" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/3f5008f4-741c-4f7e-9912-725bb30bea22"> <br>
+
+<img width="164" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/bf3d3af4-d845-4a73-8890-44005c94c154">
+
+This metric represents the degree of connection of one user with others in the network.
 
 ## Data Preparation:
 
@@ -51,6 +57,10 @@ Since our data is confined to only existing connections, model can only use thes
 
 ### Train Test Split for Model Validation:
 Append the missing links with actual links in the network with appropriate target labels. Create an 80-20 split for train and test datasets.
+
+<img width="466" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/4f4091c7-15cd-4202-a135-502f9b0126a8"> <br>
+
+Almost **~7.12%** of the users that fall in the Test set are NOT present in the Training data. Hence the model will have never seen these users during the training process.
 
 ## Feature Engineering:
 For each pair of users representing each record, create additional features representing similarity between users followers and followees. Following are certain features:
