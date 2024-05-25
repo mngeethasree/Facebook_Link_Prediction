@@ -147,8 +147,12 @@ It is important to be precise about model prediction as well as capture all actu
 Final Model has an roc_auc of 0.93. <br>
 <img width="277" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/a299b414-e256-4927-9fd5-5ff4b0a2578c"> <br>
 
-### Interpretation
-1. follows back is the top feature, indicating a user is most likely to follow back any of its followees.
+### Model Interpretation
+
+<img width="347" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/9a957962-bec5-479e-8300-28d89d49b316"> <br>
+
+Based on the top features selected by the model and their feature importances, 
+1. follows back is the top most feature, indicating a user is most likely to follow back any of its followees.
 2. Including preferential attaching as a feature improved model performance and turns up in top 10 features.
 3. svd features do not seem to be helpful in the classification decision
 
