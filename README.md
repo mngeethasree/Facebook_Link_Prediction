@@ -132,7 +132,7 @@ Once features are in place, we train a Random Forest Classifer and evaluate the 
 <img width="278" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/651ebc8c-b9a3-495e-8fbf-11e54bb525fd">
 <img width="274" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/6c69b849-c54a-411f-b769-8ad288afebbd">
 
-Using optimal values of depth and number of estimators, we train a Random Forest Classifier <br> 
+Using optimal values of depth and number of estimators, we train a Random Forest Classifier to obtain the final model. <br> 
 
 ## Performance metric to validate the model:
 It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model.  <br>
