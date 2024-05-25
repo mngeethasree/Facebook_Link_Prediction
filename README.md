@@ -67,7 +67,7 @@ For each pair of users representing each record, create additional features repr
 **(i) Jaccard Distance for Followers:** Jaccard index measures the degree of similarity between two sets. Mathematically, it is intersection over union between two sets. Using this feature, we can measure the degree of overlap between followers of both the users. <br>
 $j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$ <br>
 
-<div align="center">$j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$</div> <br>
+<div align="center"> $j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$ </div> 
 
 **(ii) Jaccard Distance for Followees:** Similar to followers, we can create Jaccard distance for followees <br>
 **(iii) Cosine Distance for Followers** <br>
