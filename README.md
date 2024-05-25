@@ -68,9 +68,9 @@ For each pair of users representing each record, create additional features repr
 **(i) Jaccard Distance for Followers:** <br>
 Jaccard index measures the degree of similarity between two sets. Mathematically, it is intersection over union between two sets. Using this feature, we can measure the degree of overlap between followers of both the users. <br>
 
-Refer to https://www.statisticshowto.com/jaccard-index/ for more details on Jaccard Distance
-
 $$j = \frac{\left|X \cap Y\right|}{\left|X \cup Y\right|}$$ <br>
+
+Refer to https://www.statisticshowto.com/jaccard-index/ for more details on Jaccard Distance <br>
 
 **(ii) Jaccard Distance for Followees:** <br>
 Similar to followers, we can create Jaccard distance for followees. Using this feature, we can measure the degree of overlap between followees of both the users represented by source and destination nodes. <br>
@@ -84,6 +84,11 @@ $$\text{Cosine Distance} = \frac{\left|X \cap Y\right|}{\left|X\right| \cdot \le
 Similar to followers, we can create Cosine distance for followees. Using this feature, we can measure the dissimilarity between followees of source and destination node users.<br>
 
 **(v) Page Rank:** <br>
+PageRank computes a ranking of the nodes in the graph G based on the structure of the incoming links. It was originally designed as an algorithm to rank web pages. 
+PageRank for the directed graph is calculated using networkx library. <br>
+
+PageRank - https://en.wikipedia.org/wiki/PageRank <br>
+For more details on pagerank API from networkx - https://networkx.github.io/documentation/networkx-1.10/reference/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank.html <br>
 
 **(vi) Shortest path between nodes in the graph:** <br>
 
