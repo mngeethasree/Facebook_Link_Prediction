@@ -128,7 +128,7 @@ Hence a total of 12 features are generated for both source and destination users
 A preferential attachment feature is calculated based on predecessors and successors count of source and destination nodes. <br>
 
 ## Modeling
-Once features are in place, we train a Random Forest Classifer and evaluate the performance (using F1-score as evaluation metric) for different values of n_estimators, depth etc.
+Once features are in place, we train a Random Forest Classifer and evaluate the performance (using F1-score as evaluation metric) for different values of n_estimators, depth etc. <br>
 <img width="278" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/651ebc8c-b9a3-495e-8fbf-11e54bb525fd">
 <img width="274" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/6c69b849-c54a-411f-b769-8ad288afebbd">
 
