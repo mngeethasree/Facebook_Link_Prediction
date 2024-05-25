@@ -127,7 +127,7 @@ Hence a total of 12 features are generated for both source and destination users
 **(xiii) preferential attachment:** <br>
 A preferential attachment feature is calculated based on predecessors and successors count of source and destination nodes. <br>
 
-## Modeling
+## Modeling & Final Results
 Once features are in place, we train a Random Forest Classifer and evaluate the performance (using F1-score as evaluation metric) for different values of n_estimators, depth etc. <br>
 <img width="278" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/651ebc8c-b9a3-495e-8fbf-11e54bb525fd">
 <img width="274" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/6c69b849-c54a-411f-b769-8ad288afebbd">
@@ -143,7 +143,6 @@ It is important to be precise about model prediction as well as capture all actu
 **Confusion Matrix of Train Set** <br>
 <img width="625" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/2d0cf8d4-8c69-4e0f-b162-5ca8f4b42458"> <br>
 
-## Final Results
 Final Model has an roc_auc of 0.93. <br>
 <img width="277" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/a299b414-e256-4927-9fd5-5ff4b0a2578c"> <br>
 
