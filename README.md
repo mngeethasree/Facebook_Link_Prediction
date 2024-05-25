@@ -95,12 +95,12 @@ Another important feature could be the shortest path distance between nodes in t
 If the shortest path is smaller, it indicates that the two users are more closely connected compared to users with a larger shortest path distance.
 But if the users are directly connected to each other, then the shortest path distance would be 0. Hence in this case, the edge is removed from the graph and the shortest path is then calculated. <br>
 
-**(vii) Check if users belong to same community:** <br>
+**(vii) Flag indicating if users belong to same community:** <br>
 
- weekly connected component
+Creating a binary indicator that denotes whether two users belong to the same community or group within the network graph. Communities are densely connected subgraphs with sparse connections to other parts of the graph. This feature can be useful for understanding relationships in smaller communities. This binary flag represents if the users belong to same weakly connected component. <br>
 
 **(viii) Adamic/Adar Index:** <br>
-
+A(x, y) = \sum_{u \in N(x) \cap N(y)} \frac{1}{\log(|N(u)|)}
 **(ix) Is user following back:** <br>
 
 **(x) Katz centrality:** <br>
