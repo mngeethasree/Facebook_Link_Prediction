@@ -22,7 +22,7 @@ Hence this data can be represented as directed graph.
 ## Exploratory Data Analysis:
 1. Distribution of number of followers for each user 
 
-<img width="440" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/77c75481-8ef8-4eb7-bca6-34bc1e01c428">
+<img width="440" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/77c75481-8ef8-4eb7-bca6-34bc1e01c428"> <br>
 
 <img width="395" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/0a5f4659-772b-4a12-bea9-038e5f3b6370">
 
@@ -31,7 +31,7 @@ Hence this data can be represented as directed graph.
 
 2. Distribution of number of followees for each user
 
-<img width="480" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/b20c937e-440c-424b-983d-e907da8bf01f">
+<img width="480" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/b20c937e-440c-424b-983d-e907da8bf01f"> <br>
 
 <img width="439" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/19ad94da-3b4e-48d7-8fb6-f2d89d7b8fbd">
 
