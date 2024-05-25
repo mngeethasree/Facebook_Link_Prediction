@@ -9,8 +9,8 @@ Given a new user pair (Um, Un), model should be able to predict what is the prob
 In the dataset, each record consists of a pair of users who are currently connected to each other <br>
 
 For example, <br>
-A, B  -  indicates that A follows B (A -> Source node, B-> Destination node) <br>
-B, A  -  indicates that B follows A (B -> Source node, A-> Destination node) <br>
+a record A, B  -  indicates that A follows B (A -> Source node, B-> Destination node) <br>
+while a record B, A  -  indicates that B follows A (B -> Source node, A-> Destination node) <br>
 
 Connections can be two way. For example, if A follows B, its not necessary that B follows A. But if they do follow each other, they will be represented as two seperate records in the dataset.
 
