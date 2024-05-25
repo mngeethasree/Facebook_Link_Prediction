@@ -16,6 +16,9 @@ Connections can be two way. For example, if A follows B, its not necessary that 
 
 Hence this data can be represented as directed graph.
 
+<img width="330" alt="img1" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/7f7c22ea-a80a-4034-b186-fcfff9c56410">
+
+
 ## Exploratory Data Analysis:
 1. Distribution of number of followers for each user - 99% of the users have 40 or less followers
 2. Distribution of number of followees for each user - 99.9% of the users follow less than 123 other users.
