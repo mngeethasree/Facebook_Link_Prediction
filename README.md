@@ -43,7 +43,7 @@ Hence this data can be represented as directed graph.
 
 **3. Distribution of sum of number of followers and number of followees**
 
-<img width="425" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/3f5008f4-741c-4f7e-9912-725bb30bea22"> <br>
+<div align="center"><img width="425" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/3f5008f4-741c-4f7e-9912-725bb30bea22"></div> <br>
 
 <img width="164" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/bf3d3af4-d845-4a73-8890-44005c94c154">
 
@@ -129,8 +129,8 @@ A preferential attachment feature is calculated based on predecessors and succes
 
 ## Modeling & Final Results
 Once features are in place, we train a Random Forest Classifer and evaluate the performance (using F1-score as evaluation metric) for different values of n_estimators, depth etc. <br>
-<img width="278" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/651ebc8c-b9a3-495e-8fbf-11e54bb525fd">
-<img width="274" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/6c69b849-c54a-411f-b769-8ad288afebbd">
+<div align="center"><img width="278" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/651ebc8c-b9a3-495e-8fbf-11e54bb525fd">
+<img width="274" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/6c69b849-c54a-411f-b769-8ad288afebbd"></div>
 
 Using optimal values of depth and number of estimators, we train a Random Forest Classifier to obtain the final model. <br> 
 
@@ -138,17 +138,17 @@ Using optimal values of depth and number of estimators, we train a Random Forest
 It is important to be precise about model prediction as well as capture all actual possible links within model predictions. Since both precision and recall are important,  F1 score can be considered as a metric to select the optimal model.  <br>
 
 **Confusion Matrix of Train Set** <br>
- <img width="620" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/01503c28-c134-46d3-af1b-f76d69cc269d"> <br>
+ <div align="center"><img width="620" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/01503c28-c134-46d3-af1b-f76d69cc269d"></div> <br>
 
 **Confusion Matrix of Train Set** <br>
-<img width="625" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/2d0cf8d4-8c69-4e0f-b162-5ca8f4b42458"> <br>
+<div align="center"><img width="625" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/2d0cf8d4-8c69-4e0f-b162-5ca8f4b42458"></div> <br>
 
 Final Model has an roc_auc of 0.93. <br>
-<img width="277" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/a299b414-e256-4927-9fd5-5ff4b0a2578c"> <br>
+<div align="center"><img width="277" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/a299b414-e256-4927-9fd5-5ff4b0a2578c"></div> <br>
 
 ### Model Interpretation
 
-<img width="347" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/9a957962-bec5-479e-8300-28d89d49b316"> <br>
+<div align="center"><img width="347" alt="image" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/9a957962-bec5-479e-8300-28d89d49b316"></div> <br>
 
 Based on the top features selected by the model and their feature importances, 
 1. follows back is the top most feature, indicating a user is most likely to follow back any of its followees.
