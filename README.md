@@ -16,7 +16,7 @@ Connections can be two way. For example, if A follows B, its not necessary that 
 
 Hence this data can be represented as directed graph.
 
-<img width="330" alt="img1" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/7f7c22ea-a80a-4034-b186-fcfff9c56410">
+<div align="center"><img width="330" alt="img1" src="https://github.com/mngeethasree/Facebook_Link_Prediction/assets/68059811/7f7c22ea-a80a-4034-b186-fcfff9c56410"></div>
 
 
 ## Exploratory Data Analysis:
